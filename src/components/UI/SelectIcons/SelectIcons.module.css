@@ -1,0 +1,23 @@
+.select {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+.item {
+  height: 122.25px;
+  width: 88.5px;
+  background-color: #1a1a1a;
+  border-radius: 18.5px;
+  margin-left: 5.5px;
+  margin-right: 5.5px;
+  padding-top: 20px;
+  align-items: center;
+  padding: 15.75px;
+}
+
+.icon {
+  margin-bottom: 19.25px;
+}

@@ -1,0 +1,41 @@
+.block {
+  width: 1509px;
+  height: 686.25px;
+  background-color: #fff;
+  margin-top: 40px;
+  border-radius: 18.75px;
+  background: linear-gradient(
+      60.17deg,
+      rgb(12, 12, 12) 34.464%,
+      rgba(12, 12, 12, 0) 63.673%
+    ),
+    url('src/assets/img/Mask group.png');
+  box-shadow: 1.5px 1.5px 6px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 186px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 126px;
+}
+
+.h2 {
+  margin-left: 121.5px;
+  text-shadow: 1.5px 1.5px 7.51px 0px #000000;
+  font-family: Conthrax;
+  font-size: 123.75px;
+}
+
+.h3 {
+  font-weight: 500;
+  font-size: 33.75px;
+  margin-left: 126.75px;
+}
+
+.button {
+  margin-left: 129.75px;
+  margin-top: 37px;
+}

@@ -1,0 +1,34 @@
+.block_main {
+  display: flex;
+
+  position: relative;
+}
+
+.block_text {
+  width: 100%;
+  margin-bottom: 112.5px;
+}
+
+.title {
+  font-size: 26.25px;
+  margin-bottom: 24.75px;
+}
+
+.text {
+  color: #666;
+  font-size: 19.88px;
+}
+
+.text_1 {
+  margin-bottom: 23px;
+}
+
+.text_2 {
+  margin-bottom: 15.75px;
+}
+
+.img {
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+}

@@ -1,0 +1,44 @@
+.main_block {
+  display: flex;
+  width: 1509px;
+  overflow: hidden; /* Скрываем ползунок */
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 327px;
+  height: 270.75px;
+  margin-right: 11.25px;
+  user-select: none
+}
+
+.icon {
+  border-top-left-radius: 18.5px;
+  border-top-right-radius: 18.5px;
+  width: 327px;
+  height: 187.39px;
+  background-color: #333;
+}
+
+.title {
+  width: 327px;
+  height: 84.75px;
+  background-color: #1a1a1a;
+  border-bottom-left-radius: 18.5px;
+  border-bottom-right-radius: 18.5px;
+  padding-top: 18px;
+  padding-left: 21.75px;
+}
+
+.model {
+  font-size: 19.88px;
+  font-weight: 600;
+  padding-bottom: 1.5px;
+}
+
+.name {
+  color: #666;
+  font-size: 15px;
+}

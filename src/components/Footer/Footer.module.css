@@ -1,0 +1,41 @@
+.footer {
+  background-color: #080808;
+  padding-top: 23.25px;
+  padding-bottom: 18.5px;
+  padding-left: 70.5px;
+  padding-right: 70.5px;
+  height: 108px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list_button {
+  display: flex;
+}
+
+.button {
+  padding-right: 24.75px;
+  font-size: 13.12px;
+}
+
+.info {
+  color: #5b5b5b;
+  margin-bottom: 19.25px;
+}
+
+.imgs {
+  display: flex;
+  align-items: center;
+}
+
+.mastercard {
+  width: 82.74px;
+  height: 50.25px;
+  margin-left: 33px;
+}
+
+.visa {
+  width: 83.25px;
+  height: 26.53px;
+}
