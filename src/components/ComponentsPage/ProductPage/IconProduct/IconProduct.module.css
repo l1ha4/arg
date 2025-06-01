@@ -9,6 +9,13 @@
   border-top-right-radius: 18.75px;
 }
 
+.img_title {
+  width: 1113.33px;
+  height: 626.25px;
+  background-color: #666;
+  border: none;
+}
+
 .bottom {
   width: 1113px;
   height: 31px;
@@ -19,6 +26,7 @@
 
 .list_img {
   margin-top: 45.72px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,6 +36,9 @@
 .img {
   border-radius: 18.75px;
   margin-right: 11.5px;
+  width: 237.17px;
+  height: 133.41px;
+  background-color: #666;
 }
 
 .but1 {
