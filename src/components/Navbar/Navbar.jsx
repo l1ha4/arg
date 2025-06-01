@@ -23,7 +23,7 @@ function Navbar() {
       />
 
       <ButtonContent cN={cl.navbar__logo} onClick={() => navigate('./')}>
-        <img src="src\assets\icons\navbar\arglogo.svg" alt="logo__navbar" />
+        <img src="src/assets/icons/navbar/arglogo.svg" alt="logo__navbar" />
       </ButtonContent>
 
       <div className={cl.navbar__search}>
