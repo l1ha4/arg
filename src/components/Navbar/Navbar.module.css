@@ -1,4 +1,4 @@
-.block {
+.navbar {
   display: flex;
   flex-direction: row;
   background-color: #0c0c0c;
@@ -8,23 +8,48 @@
   padding-right: 70.5px;
 }
 
-.logo {
+.navbar__logo {
   margin-top: 28px;
   margin-bottom: 28px;
-  margin-right: 53px;
 }
 
-.user {
+.navbar__search {
+  margin-top: 19.5px;
+  width: 1467.75px;
+  height: 40.5px;
+  margin-left: 53px;
+}
+
+.search__input {
+  border-radius: 18.75px;
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 100%;
+  color: #666;
+  font-size: 16px;
+  padding-left: 14.25px;
+  padding-right: 14.25px;
+}
+
+.navbar__user {
   margin-left: 10.5px;
 }
 
-.filter {
+.navbar__filter {
   margin-left: 3.5px;
   margin-right: 25.75px;
 }
 
-.search {
-  margin-top: 19.5px;
-  width: 1467.75px;
-  height: 40.5px;
+.modal_user {
+  position: absolute;
+
+  top: 89px;
+  right: 70.5px;
 }
+
+.block_none {
+  display: none;
+}
+
+
+

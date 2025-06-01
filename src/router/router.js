@@ -1,7 +1,10 @@
+import DevPage from '../pages/DevPage'
 import InfoStartPage from '../pages/InfoStartPage'
-import PORSCHE911 from '../pages/PORSCHE911'
+import ProductPage from '../pages/ProductPage'
 
 export const publicRoutes = [
   { path: '/', element: InfoStartPage, exact: true },
-  { path: '/test', element: PORSCHE911, exact: true },
+  // { path: '/product/:id', element: ProductPage, exact: true },
+  { path: '/product', element: ProductPage, exact: true },
+  { path: '/dev', element: DevPage, exact: true },
 ]

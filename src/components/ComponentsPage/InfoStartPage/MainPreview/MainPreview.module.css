@@ -38,4 +38,17 @@
 .button {
   margin-left: 129.75px;
   margin-top: 37px;
+  padding-left: 33.75px;
+  padding-right: 33.75px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #268cff;
+  color: #fff;
+}
+
+.select {
+  margin-top: 12.75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

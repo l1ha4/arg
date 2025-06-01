@@ -2,15 +2,13 @@ import React from 'react'
 import SelectItem from './SelectItem'
 import cl from './SelectIcons.module.css'
 
-function SelectIcons() {
+function SelectIcons({ icon, ...props }) {
+
   return (
-    <div className={cl.select}>
-      <SelectItem name="Clothing" path="src/assets/icons/select/t-shirt 1.svg" />
-      <SelectItem name="Clothing" path="src/assets/icons/select/t-shirt 1.svg" />
-      <SelectItem name="Clothing" path="src/assets/icons/select/t-shirt 1.svg" />
-      <SelectItem name="Clothing" path="src/assets/icons/select/t-shirt 1.svg" />
-      <SelectItem name="Clothing" path="src/assets/icons/select/t-shirt 1.svg" />
-      <SelectItem name="Clothing" path="src/assets/icons/select/t-shirt 1.svg" />
+    <div {...props} className={cl.select}>
+      {icon.map((item, index) => (
+        <SelectItem name={item.name} path={item.path} key={index + item.name + item.path}/>
+      ))}
     </div>
   )
 }

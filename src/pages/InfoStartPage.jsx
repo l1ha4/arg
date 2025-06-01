@@ -9,16 +9,18 @@ import InfoArg from '../components/ComponentsPage/InfoStartPage/InfoArg/InfoArg'
 
 function InfoStartPage() {
   const icons = [
-    ('src/assets/icons/select/ak-47 1.svg',
-    'src/assets/icons/select/car 2',
-    'src/assets/icons/select/factory 1',
-    'src/assets/icons/select/long-sofa 1'),
+    { name: 'Clothing', path: 'src/assets/icons/select/t-shirt 1.svg' },
+    { name: 'Aircraft', path: 'src/assets/icons/select/plane 1.svg' },
+    { name: 'Vehicles', path: 'src/assets/icons/select/car 2.svg' },
+    { name: 'Weapon', path: 'src/assets/icons/select/ak-47 1.svg' },
+    { name: 'Industrial', path: 'src/assets/icons/select/factory 1.svg' },
+    { name: 'Furniture', path: 'src/assets/icons/select/long-sofa 1.svg' },
   ]
 
   return (
     <div className="page">
       <MainPreview />
-      <SelectIcons path={icons} />
+      <SelectIcons icon={icons} />
 
       <div className="week__block">
         <div className="h1">ARTISTS OF THE WEEK</div>
@@ -29,9 +31,8 @@ function InfoStartPage() {
         <div className="h1">RECENT MODELS</div>
         <HorListScroll />
       </div>
-      
-      <InfoArg/>
-      
+
+      <InfoArg />
     </div>
   )
 }

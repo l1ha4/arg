@@ -1,9 +1,9 @@
 import React from 'react'
 import cl from './Button.module.css'
 
-function Button({ children, ...props }) {
+function Button({cN, children, ...props }) {
   return (
-    <button {...props} className={cl.button}>
+    <button {...props} className={`${cl.button} ${cN}`}>
       {children}
     </button>
   )

@@ -1,0 +1,33 @@
+.select {
+  display: flex;
+}
+
+.choice {
+  width: 37.5px;
+  height: 7.5px;
+  border-radius: 3.75px;
+  background-color: #1a1a1a;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.choice__element {
+  width: 14.25px;
+  height: 7.5px;
+  background-color: #fff;
+  border-top-left-radius: 3.75px;
+  border-bottom-left-radius: 3.75px;
+}
+
+.select__elements {
+  display: flex;
+  margin-left: 9px;
+}
+.element {
+  width: 7.5px;
+  height: 7.5px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 6px;
+}

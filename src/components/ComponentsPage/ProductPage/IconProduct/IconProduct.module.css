@@ -1,0 +1,68 @@
+.img_title {
+}
+
+.top {
+  width: 1113px;
+  height: 31px;
+  background-color: #1a1a1a;
+  border-top-left-radius: 18.75px;
+  border-top-right-radius: 18.75px;
+}
+
+.bottom {
+  width: 1113px;
+  height: 31px;
+  background-color: #1a1a1a;
+  border-bottom-left-radius: 18.75px;
+  border-bottom-right-radius: 18.75px;
+}
+
+.list_img {
+  margin-top: 45.72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  border-radius: 18.75px;
+  margin-right: 11.5px;
+}
+
+.but1 {
+}
+
+.but2 {
+}
+
+.imgs_list {
+  display: flex;
+  width: 1056px;
+  overflow: hidden;
+}
+
+.list_img {
+  margin-top: 16.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  border-radius: 18.75px;
+  margin-right: 11.5px;
+}
+
+.but1 {
+}
+
+.but2 {
+}
+
+.imgs_list {
+  display: flex;
+  width: 1056px;
+  overflow: hidden;
+}
