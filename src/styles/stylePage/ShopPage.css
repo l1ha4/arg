@@ -1,0 +1,28 @@
+.shop__search_container {
+  margin-top: 26.85px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop__search_h1 {
+  font-size: 26.25px;
+  font-weight: 600;
+}
+
+.shop__search {
+  margin-left: 28.75px;
+}
+
+.shop__model {
+  width: 1113px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 21px;
+}
+
+.shop__flex {
+  display: flex;
+  margin-top: 20.25px;
+}

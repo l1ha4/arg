@@ -1,0 +1,19 @@
+.description {
+  margin-top: 43.5px;
+}
+
+.ul {
+  margin-left: 20px;
+  margin-top: 23.5px;
+  margin-bottom: 40px;
+}
+
+.h1 {
+  font-size: 26.25px;
+  font-weight: 600;
+}
+
+.li {
+  list-style-type: disc; 
+}
+

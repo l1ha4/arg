@@ -1,0 +1,80 @@
+.block {
+  border-radius: 18.75px;
+  background-color: #1a1a1a;
+  padding: 26.25px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.img {
+  border-radius: 18.75px;
+  width: 210.75px;
+  height: 118.55px;
+}
+
+.block_button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  margin-left: 25.5px;
+}
+
+.name_modal {
+  font-size: 26.25px;
+  font-weight: 600;
+}
+
+.description_modal {
+  color: #666;
+  font-size: 15px;
+}
+
+.from_name {
+  font-size: 15px;
+  margin-bottom: 8.88px;
+}
+
+.sell {
+  align-self: flex-end;
+  padding-bottom: 26.25px;
+  height: 119.25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.img_sell {
+  width: 21px;
+  height: 21px;
+}
+
+.price {
+  font-size: 33.75px;
+}
+
+.old_price {
+  font-size: 33.75px;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.button {
+  width: 51px;
+  height: 40.5px;
+  border-radius: 18.75px;
+  align-items: center;
+  background-color: #268cff;
+  color: #fff;
+}
+
+.block_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 25.5px;
+}

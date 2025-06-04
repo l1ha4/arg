@@ -1,8 +1,9 @@
 import React from 'react'
-import cl from './InfoProduct.module.css'
+import cl from './InfoModel.module.css'
 import ButtonContent from '../../../UI/ButtonContent/ButtonContent'
+import Hr from '../../../UI/Hr/Hr'
 
-function InfoProduct() {
+function InfoModel() {
   return (
     <div className={cl.block}>
       <div className={cl.h1}>Porsche 911 GT3 RS 992</div>
@@ -56,7 +57,7 @@ function InfoProduct() {
         </div>
       </div>
 
-        <hr className={cl.hr}></hr>
+      <Hr />
 
       <div className={cl.profile}>
         <div className={cl.img_profile}></div>
@@ -69,4 +70,4 @@ function InfoProduct() {
   )
 }
 
-export default InfoProduct
+export default InfoModel

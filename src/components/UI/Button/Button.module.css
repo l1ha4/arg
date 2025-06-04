@@ -1,5 +1,14 @@
 .button {
   border-radius: 18.75px;
   text-align: center;
-  
+}
+
+.button_blue {
+  border-radius: 26.25px;
+  padding-left: 50.38px;
+  padding-right: 50.38px;
+  padding-top: 14.88px;
+  padding-bottom: 14.88px;
+  background-color: #268cff;
+  color: #fff;
 }

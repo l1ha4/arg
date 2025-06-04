@@ -1,7 +1,7 @@
 import React from 'react'
-import cl from './IconProduct.module.css'
+import cl from './IconModel.module.css'
 
-function IconProduct() {
+function IconModel() {
   return (
     <div>
       <div className={cl.block_tile}>
@@ -34,4 +34,4 @@ function IconProduct() {
   )
 }
 
-export default IconProduct
+export default IconModel

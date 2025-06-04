@@ -1,0 +1,29 @@
+.h1 {
+  font-size: 26.25px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.details {
+  margin-top: 43.5px;
+  background-color: #1A1A1A;
+  border-radius: 18.75px;
+  padding: 26.25px;
+}
+
+.flex_detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.par_details {
+  color: #666;
+}

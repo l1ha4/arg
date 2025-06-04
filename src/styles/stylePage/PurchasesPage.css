@@ -1,0 +1,14 @@
+.shop__search_h1 {
+  font-size: 26.25px;
+  font-weight: 600;
+}
+
+.shop__search {
+  margin-left: 28.75px;
+}
+
+.purchases__element_width {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.65px;
+}

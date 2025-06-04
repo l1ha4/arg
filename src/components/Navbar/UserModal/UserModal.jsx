@@ -7,8 +7,11 @@ import SettingsSvg from '../../../assets/icons/modalWindow/SettingsSvg'
 import LogOutSvg from '../../../assets/icons/modalWindow/LogOutSvg'
 import ButtonContent from '../../UI/ButtonContent/ButtonContent'
 import Modal from 'react-modal'
+import { useNavigate } from 'react-router-dom'
 
 function UserModal({ funClick, cN, ...props }) {
+  const navigate = useNavigate()
+
   return (
     <div className={`${cl.block} ${cN}`}>
       <ButtonContent cN={cl.flex}>
@@ -25,7 +28,10 @@ function UserModal({ funClick, cN, ...props }) {
           <div className={cl.li__text}>Favorites</div>
         </ButtonContent>
 
-        <ButtonContent className={cl.li}>
+        <ButtonContent
+          className={cl.li}
+          onClick={() => navigate('./purchases')}
+        >
           <PurchasesSvg className={cl.li__icon} />
           <div className={cl.li__text}>Purchases</div>
         </ButtonContent>

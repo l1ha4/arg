@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import cl from './Navbar.module.css'
 import { useNavigate } from 'react-router-dom'
 import ButtonContent from '../UI/ButtonContent/ButtonContent'
-import Input from '../UI/Input/Input'
+import Search from '../UI/Search/Search'
 import UserModal from './UserModal/UserModal'
+import logo from '../../assets/icons/navbar/arglogo.svg'
 
 function Navbar() {
   const navigate = useNavigate()
@@ -14,6 +15,10 @@ function Navbar() {
     setModalIsOpen(!modalIsOpen)
   }
 
+  // const onTransInInput {
+    
+  // }
+
   return (
     <div className={cl.navbar}>
       <UserModal
@@ -23,18 +28,18 @@ function Navbar() {
       />
 
       <ButtonContent cN={cl.navbar__logo} onClick={() => navigate('./')}>
-        <img src="src/assets/icons/navbar/arglogo.svg" alt="logo__navbar" />
+        <img src={logo} alt="logo__navbar" />
       </ButtonContent>
 
       <div className={cl.navbar__search}>
-        <Input cN={cl.search__input} placeholder="Search" />
+        <Search />
       </div>
 
       <ButtonContent cN={cl.navbar__filter}>
         <img src="src/assets/icons/navbar/filter 2.svg" />
       </ButtonContent>
 
-      <ButtonContent cN={cl.navbar__shop}>
+      <ButtonContent cN={cl.navbar__shop} onClick={() => navigate('./shop')}>
         <img src="src/assets/icons/navbar/shopping-basket 1.svg" />
       </ButtonContent>
 
