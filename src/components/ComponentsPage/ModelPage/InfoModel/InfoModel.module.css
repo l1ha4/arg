@@ -10,8 +10,11 @@
 }
 
 .flex_between {
+  display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .h1 {
@@ -47,11 +50,31 @@
 }
 
 .button_shop {
+  transition-duration: 200ms;
   border-radius: 26.25px;
   background-color: #0c0c0c;
   width: 255.75px;
   height: 54.75px;
   padding: 14.25px 50.63px;
+}
+
+.button_shop:hover {
+  background-color: #333;
+  transition-duration: 200ms;
+}
+
+.button_shop_active {
+  transition-duration: 200ms;
+  background-color: #268CFF;
+  width: 255.75px;
+  height: 54.75px;
+  padding: 14.25px 50.63px;
+  border-radius: 26.25px;
+}
+
+.button_shop_active:hover {
+  background-color: #0077ff;
+  transition-duration: 200ms;
 }
 
 .flex_center {
@@ -69,6 +92,19 @@
 
 .button_like {
   background-color: #0c0c0c;
+  border-radius: 50%;
+  width: 54.75px;
+  height: 54.75px;
+  padding: 11.25px 7.5px 7.5px 7.5px;
+  margin-left: 7.5px;
+}
+
+.button_like:hover {
+  background-color: #333;
+}
+
+.button_like_active {
+  background-color: #D91031;
   border-radius: 50%;
   width: 54.75px;
   height: 54.75px;

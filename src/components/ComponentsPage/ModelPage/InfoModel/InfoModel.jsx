@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cl from './InfoModel.module.css'
 import ButtonContent from '../../../UI/ButtonContent/ButtonContent'
 import Hr from '../../../UI/Hr/Hr'
+import shop from '../../../../assets/icons/infopage/shoppingcart.svg'
+import like2 from '../../../../assets/icons/infopage/like2.svg'
+import like1 from '../../../../assets/icons/infopage/like1.svg'
 
 function InfoModel() {
+  const [stateLike, setStateLike] = useState(false)
   return (
     <div className={cl.block}>
       <div className={cl.h1}>Porsche 911 GT3 RS 992</div>
@@ -17,19 +21,16 @@ function InfoModel() {
       <div className={cl.flex_between}>
         <ButtonContent cN={cl.button_shop}>
           <div className={cl.flex_center}>
-            <svg
-              className={cl.svg_shop}
-              src="src/assets/icons/infopage/shoppingcart.svg"
-            />
+            <img className={cl.svg_shop} src={shop} />
             Add to cart
           </div>
         </ButtonContent>
 
-        <ButtonContent cN={cl.button_like}>
-          <svg
-            className={cl.svg_shop}
-            src="src/assets/icons/infopage/Group 35.svg"
-          />
+        <ButtonContent
+          cN={stateLike ? cl.button_like_active : cl.button_like}
+          onClick={() => setStateLike(!stateLike)}
+        >
+          <img className={cl.svg_like} src={stateLike ? like1 : like2} />
         </ButtonContent>
       </div>
 
