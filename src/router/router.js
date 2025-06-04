@@ -2,7 +2,7 @@ import DevPage from '../pages/DevPage'
 import InfoStartPage from '../pages/InfoStartPage'
 import ModelPage from '../pages/ModelPage'
 import PaymentPage from '../pages/PaymentPage'
-import PurchasesPage from '../pages/PURCHASESPage'
+import PurchasesPage from '../pages/PurchasesPage'
 import SearchPage from '../pages/SearchPage'
 import ShopPage from '../pages/ShopPage'
 
