@@ -5,6 +5,9 @@ import ButtonContent from '../UI/ButtonContent/ButtonContent'
 import Search from '../UI/Search/Search'
 import UserModal from './UserModal/UserModal'
 import logo from '../../assets/icons/navbar/arglogo.svg'
+import filter from '../../assets/icons/navbar/filter.svg'
+import shop from '../../assets/icons/navbar/shop.svg'
+import user from '../../assets/icons/navbar/user.svg'
 
 function Navbar() {
   const navigate = useNavigate()
@@ -36,15 +39,15 @@ function Navbar() {
       </div>
 
       <ButtonContent cN={cl.navbar__filter}>
-        <img src="src/assets/icons/navbar/filter 2.svg" />
+        <img src={filter} />
       </ButtonContent>
 
       <ButtonContent cN={cl.navbar__shop} onClick={() => navigate('./shop')}>
-        <img src="src/assets/icons/navbar/shopping-basket 1.svg" />
+        <img src={shop} />
       </ButtonContent>
 
       <ButtonContent cN={cl.navbar__user} onClick={clickModal}>
-        <img src="src/assets/icons/navbar/user 3.svg" />
+        <img src={user} />
       </ButtonContent>
     </div>
   )

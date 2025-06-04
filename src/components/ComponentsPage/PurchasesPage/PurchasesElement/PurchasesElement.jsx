@@ -1,27 +1,27 @@
 import React from 'react'
 import cl from './PurchasesElement.module.css'
 import Button from '../../../UI/ButtonContent/ButtonContent'
-import UploadsSvg from '../../../../assets/icons/modalWindow/UploadsSvg'
+import uploadsSvg from '../../../../assets/icons/download.svg'
 
-function PurchasesElement() {
+function PurchasesElement({srcImg, nameModel, desModal, fromName, date}) {
   return (
     <div className={cl.block}>
-      <img className={cl.img} src="src/assets/img/image 6.png" />
+      <img className={cl.img} src={srcImg} />
 
       <div className={cl.block_text}>
         <div className={cl.name_model_block}>
-          <div className={cl.name_modal}>Porsche 911 GT3 RS 992</div>
+          <div className={cl.name_modal}>{nameModel}</div>
           <div className={cl.description_modal}>
-            Standard Use License (No Commercial)
+            {desModal}
           </div>
         </div>
-        <div className={cl.from_name}>from Name</div>
+        <div className={cl.from_name}>{fromName}</div>
       </div>
       <div className={cl.block_button}>
         <Button className={cl.button}>
-          <img src="src/assets/icons/download.svg" alt="" />
+          <img src={uploadsSvg} alt="" />
         </Button>
-        <div>Purchased: 15/05/2025</div>
+        <div>{date}</div>
       </div>
     </div>
   )

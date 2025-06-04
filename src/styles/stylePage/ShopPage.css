@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20.25px;
 }
 
 .shop__search_h1 {
@@ -24,5 +25,4 @@
 
 .shop__flex {
   display: flex;
-  margin-top: 20.25px;
 }

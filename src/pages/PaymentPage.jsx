@@ -2,6 +2,9 @@ import React from 'react'
 import '../styles/stylePage/PaymentPage.css'
 import InfoShop from '../components/UI/InfoShop/InfoShop'
 import PaymentCard from '../components/UI/PaymentCard/PaymentCard'
+import masterCard from '../assets/icons/footer/mastercard.svg'
+import visa from '../assets/icons/footer/visa.svg'
+import sbp from '../assets/icons/sbp.svg'
 
 function PaymentPage() {
   return (
@@ -16,8 +19,8 @@ function PaymentPage() {
             fee="10% fee"
             cN="payment_card__width"
           >
-            <img src="src/assets/icons/footer/mastercard.svg" alt="" />
-            <img src="src/assets/icons/footer/visa.svg" alt="" />
+            <img src={masterCard} alt="" />
+            <img src={visa} alt="" />
           </PaymentCard>
 
           <div className='payment__card_flex'>
@@ -27,7 +30,7 @@ function PaymentPage() {
               fee="5% fee"
               cN="payment_card__standard"
             >
-              <img src="src/assets/icons/sbp.svg" alt="" />
+              <img src={sbp} alt="" />
             </PaymentCard>
 
             <PaymentCard
@@ -36,7 +39,7 @@ function PaymentPage() {
               fee="5% fee"
               cN="payment_card__standard"
             >
-              <img src="src/assets/icons/sbp.svg" alt="" />
+              <img src={sbp}  alt="" />
             </PaymentCard>
 
             <PaymentCard
@@ -45,7 +48,7 @@ function PaymentPage() {
               fee="5% fee"
               cN="payment_card__standard"
             >
-              <img src="src/assets/icons/sbp.svg" alt="" />
+              <img src={sbp}  alt="" />
             </PaymentCard>
           </div>
         </div>

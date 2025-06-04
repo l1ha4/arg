@@ -1,5 +1,6 @@
 import React from 'react'
 import cl from './InfoArg.module.css'
+import arg from '../../../../assets/img/arg.png'
 
 function InfoArg() {
   return (
@@ -59,7 +60,7 @@ function InfoArg() {
         </div>
       </div>
 
-      <img className={cl.img} src='src/assets/img/arg-3d-1 1.png'/>
+      <img className={cl.img} src={arg}/>
     </div>
   )
 }

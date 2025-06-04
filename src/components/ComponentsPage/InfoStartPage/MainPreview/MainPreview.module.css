@@ -4,17 +4,13 @@
   background-color: #fff;
   margin-top: 40px;
   border-radius: 18.75px;
-  background: linear-gradient(
-      60.17deg,
-      rgb(12, 12, 12) 34.464%,
-      rgba(12, 12, 12, 0) 63.673%
-    ),
-    url('src/assets/img/Mask group.png');
   box-shadow: 1.5px 1.5px 6px 0px rgba(0, 0, 0, 0.25);
   padding-top: 186px;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 .h1 {
   font-size: 50px;

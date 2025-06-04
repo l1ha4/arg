@@ -1,5 +1,7 @@
 import React from 'react'
 import cl from './Footer.module.css'
+import visa from '../../assets/icons/footer/visa.svg'
+import mastercard from '../../assets/icons/footer/mastercard.svg'
 
 function Footer() {
   return (
@@ -22,12 +24,12 @@ function Footer() {
       <div className={cl.imgs}>
         <img
           className={cl.visa}
-          src="src\assets\icons\footer\visa.svg"
+          src={visa}
           alt=""
         />
         <img
           className={cl.mastercard}
-          src="src\assets\icons\footer\mastercard.svg"
+          src={mastercard}
           alt=""
         />
       </div>
