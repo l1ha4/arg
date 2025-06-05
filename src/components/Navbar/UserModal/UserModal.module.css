@@ -1,13 +1,10 @@
 .block {
   width: 375.75px;
-  height: 384.75px;
   border-radius: 37.5px;
   background-color: #1a1a1a;
   padding: 22.5px;
   z-index: 100;
 }
-
-
 
 .img_profile {
   background-color: #333333;

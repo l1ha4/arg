@@ -3,7 +3,7 @@ import BlockProfileModels from '../components/ComponentsPage/ProfileModelsPage/B
 import '../styles/stylePage/ProfileModelsPage.css'
 import Search from '../components/UI/Search/Search'
 import H1 from '../components/UI/H1/H1'
-import SearchModels from '../components/SearchModels/SearchModels.jsx'
+import SearchModels from '../components/SearchModel/SearchModels.jsx'
 
 function ProfileModelsPage() {
   return (
@@ -20,7 +20,7 @@ function ProfileModelsPage() {
           />
         </div>
 
-        <SearchModels/>
+        <SearchModels />
       </div>
     </div>
   )

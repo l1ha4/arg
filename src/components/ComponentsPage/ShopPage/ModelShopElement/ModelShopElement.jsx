@@ -4,6 +4,13 @@ import ButtonContent from '../../../UI/ButtonContent/ButtonContent'
 import close from '../../../../assets/icons/close.svg'
 
 function ModelShopElement({srcImg, nameModel, desModal, fromName, price, oldPrice}) {
+  /*
+  TODO сделать анимацию удаления, сделать ховер на крестик
+  */
+
+  /*
+  TODO сделать декомпозцию компонента
+  */
   return (
     <div className={cl.block}>
       <img className={cl.img} src={srcImg} />

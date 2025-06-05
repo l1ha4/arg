@@ -3,6 +3,10 @@ import Hr from '../../../UI/Hr/Hr'
 import cl from './DetailsModel.module.css'
 
 function DetailsModel() {
+  /*
+  TODO сделать декомпозцию компонента
+  */
+
   return (
     <div className={cl.details}>
       <div className={cl.h1}>Details</div>

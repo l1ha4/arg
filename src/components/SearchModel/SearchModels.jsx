@@ -3,6 +3,7 @@ import ModelItem from '../ModelItem/ModelItem'
 import ListNumber from '../UI/ListNumber/ListNumber'
 
 function SearchModels() {
+  // TODO сделать рабочим
   return (
     <div>
       <div className="search__models">

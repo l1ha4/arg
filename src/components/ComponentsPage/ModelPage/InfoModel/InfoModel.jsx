@@ -5,9 +5,22 @@ import Hr from '../../../UI/Hr/Hr'
 import shop from '../../../../assets/icons/infopage/shoppingcart.svg'
 import like2 from '../../../../assets/icons/infopage/like2.svg'
 import like1 from '../../../../assets/icons/infopage/like1.svg'
+import { useNavigate } from 'react-router-dom'
 
 function InfoModel() {
   const [stateLike, setStateLike] = useState(false)
+  const [stateShop, setStateShop] = useState(false)
+  const navigate = useNavigate()
+
+
+  /*
+  TODO сделать полное отображение Included formats при нажатии на ...
+  */
+  
+  /*
+  TODO сделать декомпозцию компонента
+  */
+
   return (
     <div className={cl.block}>
       <div className={cl.h1}>Porsche 911 GT3 RS 992</div>
@@ -19,10 +32,18 @@ function InfoModel() {
       </div>
 
       <div className={cl.flex_between}>
-        <ButtonContent cN={cl.button_shop}>
+        <ButtonContent
+          cN={stateShop ? cl.button_shop_active : cl.button_shop}
+          onClick={() => {
+            setStateShop(true)
+            if (stateShop) {
+              navigate('/shop')
+            }
+          }}
+        >
           <div className={cl.flex_center}>
             <img className={cl.svg_shop} src={shop} />
-            Add to cart
+            {stateShop ? 'In cart' : 'Add to cart'}
           </div>
         </ButtonContent>
 

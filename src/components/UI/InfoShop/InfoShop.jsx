@@ -4,7 +4,10 @@ import Hr from '../Hr/Hr'
 import Button from '../Button/Button'
 import { useNavigate } from 'react-router-dom'
 
-function InfoShop({textButton}) {
+function InfoShop({ textButton }) {
+  /*
+  TODO сделать декомпозцию компонента
+  */
   const navigate = useNavigate()
   return (
     <div className={cl.block}>
@@ -32,7 +35,11 @@ function InfoShop({textButton}) {
         <div className={cl.h4}>$226.40</div>
       </div>
       <div className={cl.button_div}>
-        <Button cN={cl.button} onClick={() => navigate('/payment')} typeStyle='blue'>
+        <Button
+          cN={cl.button}
+          onClick={() => navigate('/payment')}
+          typeStyle="blue"
+        >
           {textButton}
         </Button>
       </div>

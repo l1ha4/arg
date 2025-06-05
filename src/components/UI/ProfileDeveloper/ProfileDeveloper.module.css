@@ -1,5 +1,15 @@
 .profile {
   display: flex;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.profile:hover {
+  transition-duration: 200ms;
+  .name_profile {
+    transition-duration: 200ms;
+    text-decoration: underline;
+  }
 }
 
 .img_profile {

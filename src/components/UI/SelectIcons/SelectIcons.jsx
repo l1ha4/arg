@@ -3,7 +3,7 @@ import SelectItem from './SelectItem'
 import cl from './SelectIcons.module.css'
 
 function SelectIcons({ icon, ...props }) {
-
+  // TODO сделать hover наведения пример в телеге
   return (
     <div {...props} className={cl.select}>
       {icon.map((item, index) => (

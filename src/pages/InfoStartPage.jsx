@@ -26,6 +26,7 @@ function InfoStartPage() {
 
   return (
     <div className="page">
+      
       <MainPreview />
       <SelectIcons icon={icons} />
 

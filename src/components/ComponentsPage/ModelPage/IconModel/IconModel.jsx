@@ -6,6 +6,14 @@ import arrow2 from '../../../../assets/icons/list-icon/arrow2.svg'
 import arrow1 from '../../../../assets/icons/list-icon/arrow1.svg'
 
 function IconModel() {
+    /*
+    TODO добавить функционал:
+    * - сделать скролл скриншотов модели по кнопкам
+    * - сделать скролл скриншотов модели по мыши
+    * - сделать выбор и отображение основной картинки
+    * - сделать анимацию выбора картинки
+    */
+
   return (
     <div>
       <div className={cl.block_tile}>

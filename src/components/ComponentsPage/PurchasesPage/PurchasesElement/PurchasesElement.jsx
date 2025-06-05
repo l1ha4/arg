@@ -1,6 +1,6 @@
 import React from 'react'
 import cl from './PurchasesElement.module.css'
-import Button from '../../../UI/ButtonContent/ButtonContent'
+import Button from '../../../UI/Button/Button.jsx'
 import uploadsSvg from '../../../../assets/icons/download.svg'
 
 function PurchasesElement({srcImg, nameModel, desModal, fromName, date}) {
@@ -18,7 +18,7 @@ function PurchasesElement({srcImg, nameModel, desModal, fromName, date}) {
         <div className={cl.from_name}>{fromName}</div>
       </div>
       <div className={cl.block_button}>
-        <Button className={cl.button}>
+        <Button cN={cl.button} typeStyle='blue'>
           <img src={uploadsSvg} alt="" />
         </Button>
         <div>{date}</div>

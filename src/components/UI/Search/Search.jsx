@@ -3,6 +3,11 @@ import Input from '../Input/Input'
 import cl from './Search.module.css'
 
 function Search({ cN, ...props }) {
+  /* TODO отредактириовать
+   * сделать иконку лупы
+   * изменить цвет текста при наборе в поиск
+   */
+
   const [value, setValue] = useState('')
   return (
     <Input

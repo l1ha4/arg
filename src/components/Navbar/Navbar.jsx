@@ -28,6 +28,7 @@ function Navbar() {
     }
   }
 
+  // TODO сделать ховер на иконки  
   const onClickFilter = () => {
     console.log(location)
     if(location.pathname === '/search') {
@@ -59,7 +60,7 @@ function Navbar() {
         <ButtonContent cN={cl.navbar__filter } onClick={() => onClickFilter()} >
           <img src={filter} />
         </ButtonContent>
-
+        {/* TODO сделать отображение количество моделей в корзине  */}
         <ButtonContent cN={cl.navbar__shop} onClick={() => navigate('./shop')}>
           <img src={shop} />
         </ButtonContent>

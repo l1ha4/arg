@@ -6,6 +6,8 @@ import InfoShop from '../components/UI/InfoShop/InfoShop'
 import img1 from '../assets/img/image6.png'
 
 function ShopPage() {
+  
+
   return (
     <div className="page">
       <div className="shop__search_container">

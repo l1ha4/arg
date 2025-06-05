@@ -65,10 +65,6 @@
 .button {
   width: 51px;
   height: 40.5px;
-  border-radius: 18.75px;
-  align-items: center;
-  background-color: #268cff;
-  color: #fff;
 }
 
 .block_text {

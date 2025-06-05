@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import cl from './UserModal.module.css'
 import FavoritesSvg from '../../../assets/icons/modalWindow/FavoritesSvg'
 import PurchasesSvg from '../../../assets/icons/modalWindow/PurchasesSvg'
-import UploadsSvg from '../../../assets/icons/modalWindow/UploadsSvg'
 import SettingsSvg from '../../../assets/icons/modalWindow/SettingsSvg'
 import LogOutSvg from '../../../assets/icons/modalWindow/LogOutSvg'
 import ButtonContent from '../../UI/ButtonContent/ButtonContent'
@@ -34,11 +33,6 @@ function UserModal({ funClick, cN, ...props }) {
         >
           <PurchasesSvg className={cl.li__icon} />
           <div className={cl.li__text}>Purchases</div>
-        </ButtonContent>
-
-        <ButtonContent className={cl.li}>
-          <UploadsSvg className={cl.li__icon} />
-          <div className={cl.li__text}>Uploads</div>
         </ButtonContent>
 
         <ButtonContent className={cl.li}>

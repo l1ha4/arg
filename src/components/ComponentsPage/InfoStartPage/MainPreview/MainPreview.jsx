@@ -8,7 +8,7 @@ import carimg from '../../../../assets/img/carimg.png'
 function MainPreview() {
   const navigate = useNavigate()
   const id = 1
-
+  // TODO реализовать в select таймер изображения перелистования картинок и переход на другую модель
   return (
     <div>
       <div
@@ -21,7 +21,11 @@ function MainPreview() {
         <div className={cl.h2}>PORSCHE 911</div>
         <div className={cl.h3}>by Name</div>
         {/* <Button onClick={() => navigate(`/product/${id}`)}>Open</Button> */}
-        <Button cN={cl.button} typeStyle='blue' onClick={() => navigate(`/product`)}>
+        <Button
+          cN={cl.button}
+          typeStyle="blue"
+          onClick={() => navigate(`/product`)}
+        >
           Open
         </Button>
       </div>

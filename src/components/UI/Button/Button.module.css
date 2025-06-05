@@ -4,12 +4,14 @@
 }
 
 .button_blue {
+  transition-duration: 200ms;
   border-radius: 26.25px;
-  padding-left: 50.38px;
-  padding-right: 50.38px;
-  padding-top: 14.88px;
-  padding-bottom: 14.88px;
   background-color: #268cff;
+}
+
+.button_blue:hover {
+  background-color: #57A6FF;
+  transition-duration: 200ms;
 }
 
 .button_black {
@@ -27,5 +29,19 @@
 
 .button_black:hover {
   background-color: #268CFF;
+  transition-duration: 200ms;
+}
+
+.button_black_red_hover {
+  transition-duration: 200ms;
+  border-radius: 26.25px;
+  background-color: #0C0C0C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_black_red_hover:hover {
+  background-color: #D91031;
   transition-duration: 200ms;
 }
