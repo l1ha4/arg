@@ -2,6 +2,7 @@ import DevPage from '../pages/DevPage'
 import InfoStartPage from '../pages/InfoStartPage'
 import ModelPage from '../pages/ModelPage'
 import PaymentPage from '../pages/PaymentPage'
+import ProfileModelsPage from '../pages/ProfileModelsPage'
 import PurchasesPage from '../pages/PurchasesPage'
 import SearchPage from '../pages/SearchPage'
 import ShopPage from '../pages/ShopPage'
@@ -14,5 +15,6 @@ export const publicRoutes = [
   { path: '/purchases', element: PurchasesPage, exact: true },
   { path: '/payment', element: PaymentPage, exact: true },
   { path: '/search', element: SearchPage, exact: true },
+  { path: '/profile-models', element: ProfileModelsPage, exact: true },
   { path: '/dev', element: DevPage, exact: true },
 ]
