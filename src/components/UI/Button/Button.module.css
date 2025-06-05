@@ -10,5 +10,22 @@
   padding-top: 14.88px;
   padding-bottom: 14.88px;
   background-color: #268cff;
-  color: #fff;
+}
+
+.button_black {
+  transition-duration: 200ms;
+  border-radius: 26.25px;
+  padding-left: 20.25px;
+  padding-right: 20.25px;
+  padding-top: 9.75px;
+  padding-bottom: 9.75px;
+  background-color: #0C0C0C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_black:hover {
+  background-color: #268CFF;
+  transition-duration: 200ms;
 }

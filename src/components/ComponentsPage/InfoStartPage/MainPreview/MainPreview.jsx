@@ -21,7 +21,7 @@ function MainPreview() {
         <div className={cl.h2}>PORSCHE 911</div>
         <div className={cl.h3}>by Name</div>
         {/* <Button onClick={() => navigate(`/product/${id}`)}>Open</Button> */}
-        <Button cN={cl.button} onClick={() => navigate(`/product`)}>
+        <Button cN={cl.button} typeStyle='blue' onClick={() => navigate(`/product`)}>
           Open
         </Button>
       </div>

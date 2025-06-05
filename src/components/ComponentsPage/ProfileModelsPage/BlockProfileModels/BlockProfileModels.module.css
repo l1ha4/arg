@@ -1,0 +1,33 @@
+.block {
+  padding: 26.25px;
+  background-color: #1a1a1a;
+  border-radius: 18.75px;
+  margin-top: 39.6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text__block {
+  font-size: 16.88px;
+}
+
+.text__selection {
+  font-weight: 600px;
+}
+
+.button {
+  padding: 9.75px 20.25px;
+  font-size: 13.5px;
+  margin-right: 12px;
+}
+
+.img__button {
+  width: 18.75px;
+  height: 18.75px;
+  margin-right: 7.5px;
+}
+
+.flex__button {
+  display: flex;
+}

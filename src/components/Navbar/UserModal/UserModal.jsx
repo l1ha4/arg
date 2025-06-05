@@ -14,7 +14,7 @@ function UserModal({ funClick, cN, ...props }) {
 
   return (
     <div className={`${cl.block} ${cN}`}>
-      <ButtonContent cN={cl.flex}>
+      <ButtonContent cN={cl.flex} onClick={() => navigate('./profile-models')}>
         <div className={cl.img_profile}></div>
         <div className={cl.info_profile}>
           <div className={cl.info__name}>User Name N465</div>
@@ -23,7 +23,7 @@ function UserModal({ funClick, cN, ...props }) {
       </ButtonContent>
 
       <div className={cl.ul}>
-        <ButtonContent className={cl.li}>
+        <ButtonContent className={cl.li} onClick={() => navigate('./favorites')}>
           <FavoritesSvg className={cl.li__icon} />
           <div className={cl.li__text}>Favorites</div>
         </ButtonContent>

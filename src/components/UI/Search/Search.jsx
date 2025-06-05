@@ -8,7 +8,7 @@ function Search({ cN, ...props }) {
     <Input
       {...props}
       value={value}
-      cN={`${cl.search} ${cN}`}
+      cN={`${cN} ${cl.search}`}
       placeholder="Search"
       onChange={(e) => setValue(e.target.value)}
     />

@@ -10,7 +10,9 @@
   cursor: pointer;
 }
 
+
 .select_items {
+   /* TODO сделать стили выпадающего списка */
   position: absolute;
   width: 100%;
   height: 100px;
