@@ -1,0 +1,19 @@
+.input {
+  padding: 7.5px;
+  height: 23px;
+  width: 78px;
+  background-color: #333;
+  border-radius: 15px;
+  margin-left: 7.75px;
+  text-align: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}

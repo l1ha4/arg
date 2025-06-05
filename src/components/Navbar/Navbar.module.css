@@ -1,7 +1,12 @@
+.navbar_flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c0c0c;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: #0c0c0c;
   justify-content: space-between;
   width: 100%;
   padding-left: 70.5px;
@@ -21,7 +26,6 @@
 }
 
 .search__input {
-  
 }
 
 .navbar__user {
@@ -47,6 +51,3 @@ cl.margin_top {
 .block_none {
   display: none;
 }
-
-
-

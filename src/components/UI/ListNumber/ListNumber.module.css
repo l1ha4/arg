@@ -1,0 +1,17 @@
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.block {
+  border-radius:7.5px;
+  width: 40.5px;
+  height: 40.5px;
+  margin-right: 7.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A1A1A;
+  font-size: 15px;
+}

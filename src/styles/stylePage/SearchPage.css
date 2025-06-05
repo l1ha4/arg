@@ -1,0 +1,9 @@
+.search_h1 {
+  margin-top: 32px;
+  margin-bottom: 25px;
+}
+
+.search__models {
+  display: flex;
+  flex-wrap: wrap;
+}

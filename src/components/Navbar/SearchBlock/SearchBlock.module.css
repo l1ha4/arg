@@ -1,0 +1,35 @@
+.block {
+  background-color: #0C0C0C;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 18px 0px;
+}
+
+.block__item {
+  padding: 15px;
+  height: 40.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18.75px;
+  background-color: #1A1A1A;
+  margin-right: 18.75px;
+}
+
+.block_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr {
+  width: 0.75px;
+  height: 22px;
+  background-color: #333;
+  margin: 0px 7.5px;
+}
+
+.to {
+  margin-left: 7.5px;
+}

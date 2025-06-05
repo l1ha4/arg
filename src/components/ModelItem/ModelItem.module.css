@@ -1,0 +1,52 @@
+.img {
+  width: 369px;
+  height: 209.23px;
+  border-top-left-radius: 18.75px;
+  border-top-right-radius: 18.75px;
+  overflow: hidden; 
+  margin-right: 3px;
+  
+}
+
+.block {
+  padding: 15px 25px;
+  width: 369px;
+  height: 116.25px;
+  background-color: #1A1A1A;
+  border-bottom-left-radius: 18.75px;
+  border-bottom-right-radius: 18.75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 7.5px;
+}
+
+.name__modal {
+  font-size: 19.87px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.user__modal {
+  color: #666;
+  font-size: 15px;
+}
+
+.price__block {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.price {
+  font-size: 19.83px;
+  font-weight: 700;
+  margin-right: 6.25px;
+}
+
+.sell {
+  background-color: #333;
+  padding: 11.25px 7.5px;
+  border-radius: 26.25px;
+  font-size: 13.12px;
+}
