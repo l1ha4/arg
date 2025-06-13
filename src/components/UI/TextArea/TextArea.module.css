@@ -1,0 +1,12 @@
+.textarea {
+  background-color: #0c0c0c;
+  padding: 14.5px;
+  border-radius: 18.75px;
+  color: #666;
+  height: 116.25px;
+  overflow-wrap: anywhere;
+}
+
+.textarea:focus {
+  color: #fff;
+}

@@ -1,0 +1,36 @@
+.block {
+  padding: 26.25px;
+  border-radius: 26.25px;
+  background-color: #1a1a1a;
+  width: 903px;
+}
+
+.h1 {
+  font-size: 26.25px;
+  margin-bottom: 23.25px;
+}
+
+.h2 {
+  font-size: 18.75px;
+  margin-bottom: 11px;
+}
+
+.input_block {
+  margin-bottom: 24.5px;
+}
+
+.button {
+  padding: 15px 33.5px;
+}
+
+.button_block {
+  display: flex;
+}
+
+.blue {
+  margin-right: 7.5px;
+}
+
+.black:hover {
+  background-color: #333;
+}

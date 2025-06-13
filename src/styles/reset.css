@@ -140,12 +140,28 @@ select:focus {
   outline: none; /* Убирает контур при наведении и фокусе */
 }
 
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   border: none;
   -webkit-text-fill-color: #fff !important;
   -webkit-box-shadow: 0 0 0px 1000px #333 inset !important;
 	background-color: none;
-}
+} */
 
+textarea {
+  all: unset;               /* сброс почти всех стилей */
+  box-sizing: border-box;   /* удобная модель размеров */
+  width: 100%;              /* по ширине родителя */
+  font: inherit;            /* наследует шрифт */
+  color: inherit;           /* наследует цвет */
+  background: transparent;  /* прозрачный фон */
+  border-radius: 0;         /* без скруглений */
+  -webkit-appearance: none; /* отключаем нативный стиль WebKit */
+  appearance: none;
+  outline: none;            /* убираем обводку при фокусе */
+  padding: 0;               /* без внутренних отступов */
+  margin: 0;                /* без внешних отступов */
+  resize: none;             /* отключаем изменение размера (по желанию) */
+  box-shadow: none;         /* убираем тени */
+}
