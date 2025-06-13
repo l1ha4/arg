@@ -1,0 +1,81 @@
+.form {
+  border-radius: 37.5px;
+  width: 375.75px;
+  padding: 22.5px;
+  background-color: #1a1a1a;
+  height: max-content;
+  position: relative;
+}
+
+.button__choice {
+  padding: 12.75px 0px;
+  width: 146px;
+  text-align: center;
+  font-size: 13.3px;
+  z-index: 2;
+}
+
+.flex_button__choice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_button__choice {
+  color: #666;
+}
+
+.text_button__choice_active {
+  color: #fff;
+}
+
+.button__active {
+  position: absolute;
+  width: 146px;
+  height: 41.5px;
+  background-color: #333;
+  border-radius: 18.75px;
+  z-index: 1;
+}
+
+.button__active_right {
+  right: 22.5px;
+}
+
+.input_width {
+  width: 100%;
+}
+
+.input__block {
+  margin-top: 32.25px;
+}
+
+.input__margin {
+  margin-top: 18px;
+}
+
+.a {
+  color: #268cff;
+  cursor: pointer;
+}
+
+.a:hover {
+  color: #268cff;
+  text-decoration: underline;
+}
+
+.button__form {
+  width: 100%;
+  padding: 12.63px 0px;
+  font-size: 13.33px;
+}
+
+.text_reg {
+  font-size: 9.75px;
+  color: #666;
+  margin-top: 18px;
+  margin-bottom: 23.25px;
+}
+
+.margin_bot {
+  margin-bottom: 32.25px;
+}

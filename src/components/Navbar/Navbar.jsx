@@ -9,8 +9,10 @@ import filter from '../../assets/icons/navbar/filter.svg'
 import shop from '../../assets/icons/navbar/shop.svg'
 import user from '../../assets/icons/navbar/user.svg'
 import SearchBlock from './SearchBlock/SearchBlock'
+import AuthReg from '../AuthReg/AuthReg'
 
 function Navbar() {
+  const auth = true
   const navigate = useNavigate()
   const location = useLocation()
   const [stateFilter, setStateFilter] = useState(false)
@@ -28,26 +30,28 @@ function Navbar() {
     }
   }
 
-  // TODO сделать ховер на иконки  
+  // TODO сделать ховер на иконки
   const onClickFilter = () => {
     console.log(location)
-    if(location.pathname === '/search') {
+    if (location.pathname === '/search') {
       setStateFilter(!stateFilter)
     } else {
       setStateFilter(false)
     }
   }
 
-
-
   return (
     <div className={cl.navbar_flex}>
       <div className={cl.navbar}>
-        <UserModal
-          cN={modalIsOpen ? cl.modal_user : cl.block_none}
-          modalIsOpen={modalIsOpen}
-          setModalIsOpen={setModalIsOpen}
-        />
+        {auth ? (
+          <UserModal
+            cN={modalIsOpen ? cl.modal_user : cl.block_none}
+            modalIsOpen={modalIsOpen}
+            setModalIsOpen={setModalIsOpen}
+          />
+        ) : (
+          <AuthReg cN={modalIsOpen ? cl.modal_user : cl.block_none} />
+        )}
 
         <ButtonContent cN={cl.navbar__logo} onClick={() => navigate('./')}>
           <img src={logo} alt="logo__navbar" />
@@ -57,7 +61,7 @@ function Navbar() {
           <Search onKeyPress={onTransInInput} />
         </div>
 
-        <ButtonContent cN={cl.navbar__filter } onClick={() => onClickFilter()} >
+        <ButtonContent cN={cl.navbar__filter} onClick={() => onClickFilter()}>
           <img src={filter} />
         </ButtonContent>
         {/* TODO сделать отображение количество моделей в корзине  */}

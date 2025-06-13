@@ -35,7 +35,7 @@ function UserModal({ funClick, cN, ...props }) {
           <div className={cl.li__text}>Purchases</div>
         </ButtonContent>
 
-        <ButtonContent className={cl.li}>
+        <ButtonContent className={cl.li} onClick={() => navigate('./settings')}>
           <SettingsSvg className={cl.li__icon} />
           <div className={cl.li__text}>Settings</div>
         </ButtonContent>

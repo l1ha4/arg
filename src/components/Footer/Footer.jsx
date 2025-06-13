@@ -2,8 +2,11 @@ import React from 'react'
 import cl from './Footer.module.css'
 import visa from '../../assets/icons/footer/visa.svg'
 import mastercard from '../../assets/icons/footer/mastercard.svg'
+import ButtonContent from '../UI/ButtonContent/ButtonContent'
+import { useNavigate } from 'react-router-dom'
 
 function Footer() {
+  const navigate = useNavigate()
   return (
     <div className={cl.footer}>
       <div>
@@ -13,11 +16,12 @@ function Footer() {
           trademarks are the property of their respective owners.
         </div>
         <div className={cl.list_button}>
-          <div className={cl.button}>About Us</div>
-          <div className={cl.button}>Support</div>
-          <div className={cl.button}>Privacy Policy</div>
-          <div className={cl.button}>Terms of Services</div>
-          <div className={cl.button}>Cookies Settings</div>
+          <ButtonContent cN={cl.button}>About Us</ButtonContent>
+          <ButtonContent cN={cl.button}>Support</ButtonContent>
+          <ButtonContent cN={cl.button}>Privacy Policy</ButtonContent>
+          <ButtonContent cN={cl.button}>Terms of Services</ButtonContent>
+          <ButtonContent cN={cl.button}>Cookies Settings</ButtonContent>
+          <ButtonContent onClick={() => navigate('./dev')} cN={cl.button}>Component development</ButtonContent>
         </div>
       </div>
 

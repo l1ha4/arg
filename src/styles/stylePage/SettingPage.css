@@ -1,0 +1,131 @@
+.settings__block__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.settings__block__profile {
+  width: 375px;
+  height: 330.75px;
+  background-color: #1a1a1a;
+  border-radius: 37.5px;
+  padding: 22.5px;
+}
+
+.settings__flex_items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.settings__item {
+  display: flex;
+  text-align: center;
+  padding: 14.5px 19.09px;
+  margin-top: 15px;
+  width: 100%;
+  transition-duration: 200ms;
+  border-radius: 26.25px;
+}
+
+/* .settings__item:hover {
+  .settings__item_icon {
+    fill: #fff;
+  }
+
+  .settings__item_text {
+    color: #fff;
+  }
+
+  background-color: #333;
+  transition-duration: 200ms;
+} */
+
+.settings__item_active {
+  .settings__item_icon {
+    fill: #fff;
+  }
+
+  .settings__item_text {
+    color: #fff;
+  }
+
+  background-color: #333;
+  transition-duration: 200ms;
+}
+
+.settings__item_text {
+  font-size: 20.63px;
+  margin-left: 11.25px;
+  color: #666;
+}
+
+.settings__item_icon {
+  fill: #666;
+}
+
+.settings__page {
+  width: 1113px;
+  border-radius: 37.5px;
+  background-color: #1a1a1a;
+  padding: 22.5px 26.25px;
+  margin-left: 20.25px;
+}
+
+.settings__page_title {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 22.5px;
+}
+
+.settings__profile_img {
+  width: 102.75px;
+  height: 102.75px;
+  background-color: #333;
+  border-radius:  18.75px;
+}
+
+.settings__profile_img_flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24.75px;
+}
+
+.settings__profile_img_button {
+  padding: 9.75px 15px;
+}
+
+.settings__profile_img_flex_column {
+  margin-left: 18.75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings__profile_text {
+  margin-top: 4.25px;
+  color: #666;
+  font-size: 13.13px;
+}
+
+.settings__profile_input {
+  width: 330.75px;
+  margin-bottom: 24.75px;
+}
+
+.settings__profile_input_flex {
+  display: flex;
+  width: 330.75px;
+  align-items: flex-end;
+}
+
+.settings__profile_input_button {
+  height: min-content;
+  padding: 12.75px 21px ;
+  font-size: 13.13px;
+  
+}
+
+.settings__profile_input_input {
+  width: 100%;
+  margin-right: 11.25px;
+}

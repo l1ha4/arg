@@ -1,3 +1,34 @@
-.block {
+.input {
+  background-color: #333;
+  color: #666;
+  border-radius: 18.75px;
+  padding: 12.25px 14.25px;
+  font-size: 13.13px;
+  width: 100%;
+}
 
+.input:focus {
+  color: #fff;
+}
+
+.block__password {
+  position: relative;
+  width: 100%;
+}
+
+.input__password {
+  padding: 12.25px 45.75px 12.25px 14.25px;
+}
+
+.img__password {
+  position: absolute;
+  right: 14.25px;
+  top: 12.25px;
+}
+
+.title {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
 }

@@ -1,70 +1,121 @@
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+:focus,
+:active {
+  outline: none;
 }
-input,button,textarea{font-family:inherit;}
+a:focus,
+a:active {
+  outline: none;
+}
 
-input::-ms-clear{display: none;}
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; 
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
+input[type='number']:hover,
+input[type='number']:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
-input{border: none}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-button{background: none;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-span{background: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+input {
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button {
+  background: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+span {
+  background: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-table, th, td {
-	border: none;
-	padding: 0;
-	margin: 0;
-	font-weight: 400;
+table,
+th,
+td {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
 }
 
-th, td {
-	padding: 0;
-	text-align: left;
+th,
+td {
+  padding: 0;
+  text-align: left;
 }
 
 select {
@@ -83,9 +134,18 @@ select {
 
 /* Пример стилей для кастомного фона и границы */
 
-
 /* Добавьте дополнительные стили для hover и focus */
 select:hover,
 select:focus {
   outline: none; /* Убирает контур при наведении и фокусе */
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #333 inset !important;
+	background-color: none;
+}
+
