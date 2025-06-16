@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/App.css'
 import '../styles/stylePage/StartInfoPage.css'
 import MainPreview from '../components/ComponentsPage/InfoStartPage/MainPreview/MainPreview'
@@ -12,11 +12,25 @@ import vehicles from '../assets/icons/select/car.svg'
 import weapon from '../assets/icons/select/ak-47.svg'
 import industrial from '../assets/icons/select/factory.svg'
 import furniture from '../assets/icons/select/longsofa.svg'
-
+import car1 from '../assets/img/car1/car1.png'
+import car2 from '../assets/img/car1/car2.png'
+import car3 from '../assets/img/car1/car3.png'
+import car4 from '../assets/img/car1/car4.png'
+import car5 from '../assets/img/car1/car5.png'
+import car6 from '../assets/img/car1/car6.png'
+import lada1 from '../assets/img/car2/lada1.jpg'
+import lada2 from '../assets/img/car2/lada2.jpg'
+import lada3 from '../assets/img/car2/lada3.jpg'
+import lada4 from '../assets/img/car2/lada4.jpg'
+import lada5 from '../assets/img/car2/lada5.jpg'
 
 function InfoStartPage() {
+  const arrImg1 = [car1, car2, car3, car4, car5, car6]
+  const arrImg2 = [lada1, lada2, lada3, lada4, lada5]
+  const arrsImg = [arrImg1, arrImg2]
+
   const icons = [
-    { name: 'Clothing', path: clothing},
+    { name: 'Clothing', path: clothing },
     { name: 'Aircraft', path: aircraft },
     { name: 'Vehicles', path: vehicles },
     { name: 'Weapon', path: weapon },
@@ -26,8 +40,7 @@ function InfoStartPage() {
 
   return (
     <div className="page">
-      
-      <MainPreview />
+      <MainPreview model="PORSCHE 911" developer="l1ha4" imageSets={arrsImg} />
       <SelectIcons icon={icons} />
 
       <div className="week__block">
