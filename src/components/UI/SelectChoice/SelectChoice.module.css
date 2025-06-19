@@ -1,3 +1,4 @@
+
 .select {
   display: flex;
 }
@@ -24,6 +25,8 @@
   display: flex;
   margin-left: 9px;
 }
+
+
 .element {
   width: 7.5px;
   height: 7.5px;
@@ -31,6 +34,7 @@
   border-radius: 50%;
   cursor: pointer;
   margin-right: 6px;
+  transition-duration: 500ms;
 }
 
 .element_active {
@@ -40,4 +44,5 @@
   border-radius: 50%;
   cursor: pointer;
   margin-right: 6px;
+  transition-duration: 500ms;
 }

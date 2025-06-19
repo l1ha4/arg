@@ -39,6 +39,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16.87px;
+  transition-duration: 500ms;
 }
 
 .select {

@@ -4,25 +4,14 @@ import Button from '../../../UI/Button/Button'
 import { useNavigate } from 'react-router-dom'
 import SelectChoice from '../../../UI/SelectChoice/SelectChoice'
 
-function MainPreview({ model, developer, imageSets, interval = 1000 }) {
+function MainPreview({ model, developer, imageSets, interval = 3000 }) {
   const [currentSetIndex, setCurrentSetIndex] = useState(0)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const [progress, setProgress] = useState(0)
 
   const currentImages = imageSets[currentSetIndex] || []
   const totalDuration = currentImages.length * interval
 
-  const startTimeRef = useRef(Date.now())
-  const animationFrameRef = useRef(null)
-
-  // Сброс прогресса и индекса при смене набора
-  useEffect(() => {
-    startTimeRef.current = Date.now()
-    setProgress(0)
-    setCurrentImageIndex(0)
-  }, [currentSetIndex])
-
-  // Таймер для смены фото внутри текущего набора
+  // Меняем картинку внутри набора
   useEffect(() => {
     if (currentImages.length === 0) return
 
@@ -38,34 +27,26 @@ function MainPreview({ model, developer, imageSets, interval = 1000 }) {
     return () => clearInterval(timerId)
   }, [currentImages, interval])
 
+  // Автоматически переключаем набор по окончании прогресса
   useEffect(() => {
-    if (totalDuration === 0) {
-      setProgress(0)
-      return
-    }
+    if (totalDuration === 0) return
 
-    const updateProgress = () => {
-      const elapsed = Date.now() - startTimeRef.current
-      let newProgress = (elapsed / totalDuration) * 100
-      if (newProgress > 100) newProgress = 100
-      setProgress(newProgress)
+    const timer = setTimeout(() => {
+      setCurrentSetIndex((prev) => (prev + 1) % imageSets.length)
+    }, totalDuration)
 
-      if (newProgress < 100) {
-        animationFrameRef.current = requestAnimationFrame(updateProgress)
-      } else {
-        // Автоматически переключаем набор при достижении 100%
-        setCurrentSetIndex((prev) => (prev + 1) % imageSets.length)
-      }
-    }
-
-    animationFrameRef.current = requestAnimationFrame(updateProgress)
-
-    return () => cancelAnimationFrame(animationFrameRef.current)
+    return () => clearTimeout(timer)
   }, [totalDuration, currentSetIndex, imageSets.length])
+
+  // При смене набора сбрасываем индекс текущего изображения
+  useEffect(() => {
+    setCurrentImageIndex(0)
+  }, [currentSetIndex])
 
   if (currentImages.length === 0) {
     return <div>Нет изображений для показа</div>
   }
+
   return (
     <div>
       <div
@@ -89,7 +70,8 @@ function MainPreview({ model, developer, imageSets, interval = 1000 }) {
 
       <div className={cl.select}>
         <SelectChoice
-          progress={progress}
+          duration={totalDuration}
+          keyReset={currentSetIndex}
           choice={currentSetIndex}
           setChoice={setCurrentSetIndex}
           lengthChoice={imageSets.length}

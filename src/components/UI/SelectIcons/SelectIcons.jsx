@@ -7,7 +7,7 @@ function SelectIcons({ icon, ...props }) {
   return (
     <div {...props} className={cl.select}>
       {icon.map((item, index) => (
-        <SelectItem name={item.name} path={item.path} key={index + item.name + item.path}/>
+        <SelectItem name={item.name} path={item.path} key={index + item.name + item.path} backgroundImg={item.backImg} />
       ))}
     </div>
   )

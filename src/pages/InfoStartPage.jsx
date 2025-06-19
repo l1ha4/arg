@@ -23,6 +23,7 @@ import lada2 from '../assets/img/car2/lada2.jpg'
 import lada3 from '../assets/img/car2/lada3.jpg'
 import lada4 from '../assets/img/car2/lada4.jpg'
 import lada5 from '../assets/img/car2/lada5.jpg'
+import carTest from '../assets/img/image21.png'
 
 function InfoStartPage() {
   const arrImg1 = [car1, car2, car3, car4, car5, car6]
@@ -30,12 +31,12 @@ function InfoStartPage() {
   const arrsImg = [arrImg1, arrImg2]
 
   const icons = [
-    { name: 'Clothing', path: clothing },
-    { name: 'Aircraft', path: aircraft },
-    { name: 'Vehicles', path: vehicles },
-    { name: 'Weapon', path: weapon },
-    { name: 'Industrial', path: industrial },
-    { name: 'Furniture', path: furniture },
+    { name: 'Clothing', path: clothing, backImg: carTest },
+    { name: 'Aircraft', path: aircraft, backImg: carTest },
+    { name: 'Vehicles', path: vehicles, backImg: carTest },
+    { name: 'Weapon', path: weapon, backImg: carTest },
+    { name: 'Industrial', path: industrial, backImg: carTest },
+    { name: 'Furniture', path: furniture, backImg: carTest },
   ]
 
   return (
