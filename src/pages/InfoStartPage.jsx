@@ -30,7 +30,7 @@ function InfoStartPage() {
   const arrImg2 = [lada1, lada2, lada3, lada4, lada5]
   const arrsImg = [arrImg1, arrImg2]
 
-  const icons = [
+  const iconsSelect = [
     { name: 'Clothing', path: clothing, backImg: carTest },
     { name: 'Aircraft', path: aircraft, backImg: carTest },
     { name: 'Vehicles', path: vehicles, backImg: carTest },
@@ -39,10 +39,16 @@ function InfoStartPage() {
     { name: 'Furniture', path: furniture, backImg: carTest },
   ]
 
+  const postWeek = [
+    {nameDeveloper: 'ELR', grade: 4, reviews: '(600 reviews)', img: carTest},
+    {nameDeveloper: 'ELR', grade: 4, reviews: '(600 reviews)', img: carTest},
+    {nameDeveloper: 'ELR', grade: 4, reviews: '(600 reviews)', img: carTest},
+  ]
+
   return (
     <div className="page">
       <MainPreview model="PORSCHE 911" developer="l1ha4" imageSets={arrsImg} />
-      <SelectIcons icon={icons} />
+      <SelectIcons icon={iconsSelect} />
 
       <div className="week__block">
         <div className="h1">ARTISTS OF THE WEEK</div>
