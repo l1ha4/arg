@@ -6,9 +6,7 @@ function HorListWeek({arr, ...props}) {
   // TODO сделать декомпозицию item в компоненте
   return (
     <div className={cl.main_block} {...props}>
-      <HRWeekItem/>
-      <HRWeekItem/>
-      <HRWeekItem/>
+      {arr.map((item, index) => <HRWeekItem item={item} key={index + 'HorList'}/>)}
     </div>
   )
 }

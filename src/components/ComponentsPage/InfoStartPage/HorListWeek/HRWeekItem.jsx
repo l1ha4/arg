@@ -1,18 +1,32 @@
 import React from 'react'
 import cl from './HorListWeek.module.css'
+import ButtonContent from '../../../UI/ButtonContent/ButtonContent'
+import { useNavigate } from 'react-router-dom'
 
-function HRWeekItem() {
+function HRWeekItem({ item }) {
+  const navigate = useNavigate()
   return (
-    <div className={cl.block}>
+    <ButtonContent
+      className={cl.block}
+      onClick={() => navigate(item.linkModel)}
+    >
       <div className={cl.title}>
-        <div className={cl.icon_profile}></div>
+        <img className={cl.icon_profile} src={item.imgProfile}></img>
         <div className={cl.title__text}>
-          <span className={cl.title__username}>ELR</span>
-          <span className={cl.title__num}>(600 reviews)</span>
+          <ButtonContent
+            className={cl.title__username}
+            onClick={(e) => {
+              e.stopPropagation()
+              navigate(item.linkDeveloper)
+            }}
+          >
+            {item.nameDeveloper}
+          </ButtonContent>
+          <span className={cl.title__num}>{item.reviews}</span>
         </div>
       </div>
-      <div className={cl.image}></div>
-    </div>
+      <img className={cl.image} src={item.img}></img>
+    </ButtonContent>
   )
 }
 

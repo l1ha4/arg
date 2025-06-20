@@ -5,9 +5,24 @@
   width: 100%;
 }
 
+.block:hover {
+  .title {
+    transition-duration: 200ms;
+    background-color: #242424;
+  }
+}
+
+.title__username:hover {
+  text-decoration: underline;
+}
+
+.title__username {
+  width: min-content;
+}
 
 
 .title {
+  transition-duration: 200ms;
   width: 495.5px;
   height: 84.32px;
   background-color: #1a1a1a;

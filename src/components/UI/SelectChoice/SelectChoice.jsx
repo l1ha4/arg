@@ -26,7 +26,7 @@ function SelectChoice({ duration, keyReset, choice, setChoice, lengthChoice }) {
               width: '0%',
               animationName: 'fillProgress',
               animationDuration: `${durationSeconds}s`,
-              animationTimingFunction: '',
+              animationTimingFunction: '200ms',
               animationFillMode: 'forwards', // чтобы сохранить конечное состояние
             }}
           ></div>

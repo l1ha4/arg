@@ -33,18 +33,15 @@
   align-items: center;
 }
 
+.buttonImg {
+  margin-right: 11.25px;
+}
+
 .img {
   border-radius: 18.75px;
-  margin-right: 11.5px;
+  
   width: 237.17px;
   height: 133.41px;
-  background-color: #666;
-}
-
-.but1 {
-}
-
-.but2 {
 }
 
 .imgs_list {
@@ -59,17 +56,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-.img {
-  border-radius: 18.75px;
-  margin-right: 11.5px;
-}
-
-.but1 {
-}
-
-.but2 {
 }
 
 .imgs_list {

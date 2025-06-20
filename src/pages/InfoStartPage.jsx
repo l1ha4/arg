@@ -28,7 +28,15 @@ import carTest from '../assets/img/image21.png'
 function InfoStartPage() {
   const arrImg1 = [car1, car2, car3, car4, car5, car6]
   const arrImg2 = [lada1, lada2, lada3, lada4, lada5]
-  const arrsImg = [arrImg1, arrImg2]
+  const arrsImg = [
+    {
+      nameModel: 'PORSCHE 911',
+      developer: 'l1ha4',
+      link: './product',
+      arr: arrImg1,
+    },
+    { nameModel: 'Lada', developer: 'shd', link: './product', arr: arrImg2 },
+  ]
 
   const iconsSelect = [
     { name: 'Clothing', path: clothing, backImg: carTest },
@@ -40,24 +48,93 @@ function InfoStartPage() {
   ]
 
   const postWeek = [
-    {nameDeveloper: 'ELR', grade: 4, reviews: '(600 reviews)', img: carTest},
-    {nameDeveloper: 'ELR', grade: 4, reviews: '(600 reviews)', img: carTest},
-    {nameDeveloper: 'ELR', grade: 4, reviews: '(600 reviews)', img: carTest},
+    {
+      nameDeveloper: 'ELR',
+      grade: 4,
+      reviews: '(600 reviews)',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+      imgDeveloper: '',
+    },
+    {
+      nameDeveloper: 'ELR',
+      grade: 4,
+      reviews: '(600 reviews)',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+      imgDeveloper: '',
+    },
+    {
+      nameDeveloper: 'ELR',
+      grade: 4,
+      reviews: '(600 reviews)',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+      imgDeveloper: '',
+    },
+  ]
+
+  const postRecent = [
+    {
+      nameDeveloper: 'l1ha4',
+      nameModel: 'Toyota GT86 TRD - 2014',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+    },
+    {
+      nameDeveloper: 'l1ha4',
+      nameModel: 'Toyota GT86 TRD - 2014',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+    },
+    {
+      nameDeveloper: 'l1ha4',
+      nameModel: 'Toyota GT86 TRD - 2014',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+    },
+    {
+      nameDeveloper: 'l1ha4',
+      nameModel: 'Toyota GT86 TRD - 2014',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+    },
+    {
+      nameDeveloper: 'l1ha4',
+      nameModel: 'Toyota GT86 TRD - 2014',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+    },
+    {
+      nameDeveloper: 'l1ha4',
+      nameModel: 'Toyota GT86 TRD - 2014',
+      img: carTest,
+      linkDeveloper: './profile-models',
+      linkModel: './product',
+    },
   ]
 
   return (
     <div className="page">
-      <MainPreview model="PORSCHE 911" developer="l1ha4" imageSets={arrsImg} />
+      <MainPreview imageSets={arrsImg} />
       <SelectIcons icon={iconsSelect} />
 
       <div className="week__block">
         <div className="h1">ARTISTS OF THE WEEK</div>
-        <HorListWeek />
+        <HorListWeek arr={postWeek} />
       </div>
 
       <div className="recent_block">
         <div className="h1">RECENT MODELS</div>
-        <HorListScroll />
+        <HorListScroll arr={postRecent} />
       </div>
 
       <InfoArg />
